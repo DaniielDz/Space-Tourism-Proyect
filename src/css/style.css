@@ -20,8 +20,10 @@ html {
 h1, h5, p{ margin: 0; }
 
 body {
+    height: 100vh;
     padding: 2.4rem 2.4rem 4.8rem;
     background: url('../assets/home/background-home-mobile.jpg');
+    background-size: cover;
 }
 /* Header */
 .header {
