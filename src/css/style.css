@@ -1,0 +1,129 @@
+:root {     /* Variables */
+    --darkBlue: #0b0d17;
+    --gray: #D0D6F9;
+    --white: #FFF;
+    --headingsFont: 'Bellefair', serif;
+    --subHeadingsFont: 'Barlow Condensed', sans-serif;
+    --textsFont: 'Barlow', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {    
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+h1, h5, p{ margin: 0; }
+
+body {
+    padding: 2.4rem 2.4rem 4.8rem;
+    background: url('../assets/home/background-home-mobile.jpg');
+}
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+.button {
+    height: 2.1rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+.header-nav {
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    width: 25.5rem;
+    height: 100%;
+    backdrop-filter: blur(3.5rem);
+    transition: right .5s ease;
+}
+.header-nav--active {
+    display: block;
+    right: 0;
+}
+.nav-links {
+    margin: 11.8rem 0 0 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    list-style: none;
+}
+.nav-link {
+    font-family: var(--subHeadingsFont);
+    font-size: 1.6rem;
+    letter-spacing: 2.7px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.nav-link span {
+    margin-right: 1.2rem;
+    font-weight: bold;
+}
+/* Main */
+.main { 
+    margin: 4.8rem auto 0;
+}
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+.home-content {
+    height: 27.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+}
+.heading5 {
+    height: 1.9rem;
+    font-family: var(--subHeadingsFont);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    color: var(--gray);
+}
+.heading {
+    font-family: var(--headingsFont);
+    font-size: 8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 10rem;
+    color: var(--white);
+}
+.text {
+    font-family: var(--textsFont);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--gray);
+}
+.home__button {
+    display: inline-block;
+    padding: 6rem 3rem;
+    font-family: var(--headingsFont);
+    font-size: 2rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: var(--darkBlue);
+    background-color: var(--white);
+    border-radius: 50%;
+}
