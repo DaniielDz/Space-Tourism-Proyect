@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Tourism</title>
-    <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon"> <!-- icono -->
+    <link rel="shortcut icon" href="/src/assets/favicon-32x32.png" type="image/x-icon"> <!-- icono -->
     <!-- TYPOGRAPHY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +15,15 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="/src/assets/shared/logo.svg" alt="Web logo">
-        <button class="button">
+        <a href="/"><img class="logo" src="/src/assets/shared/logo.svg" alt="Web logo"></a>
+        <button class="nav-toggle">
             <img src="/src/assets/shared/icon-hamburger.svg" alt="Mobile menu">
         </button>
         <nav class="header-nav mobile-nav tablet-nav desktop-nav">
             <ul class="nav-links ">
                 <hr>
-                <li><a class="nav-link nav-link--active" href="#"><span>00</span>home</a></li>
-                <li><a class="nav-link" href="#"><span>01</span>destination</a></li>
+                <li><a class="nav-link nav-link--active" href="/"><span>00</span>home</a></li>
+                <li><a class="nav-link" href="/destination.html"><span>01</span>destination</a></li>
                 <li><a class="nav-link" href="#"><span>02</span>crew</a></li>
                 <li><a class="nav-link" href="#"><span>03</span>technology</a></li>
             </ul>
@@ -36,8 +36,8 @@
                 <h1 class="heading">space</h1>
                 <p class="text">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
             </div>
-            <div class="button-container">
-                <a class="home__button" href="#">Explore</a>
+            <div class="home-explore">
+                <a class="home__button" href="/destination.html">Explore</a>
             </div>
         </section>
     </main>

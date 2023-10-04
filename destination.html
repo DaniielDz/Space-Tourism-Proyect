@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism</title>
+    <link rel="shortcut icon" href="/src/assets/favicon-32x32.png" type="image/x-icon"> <!-- icono -->
+    <!-- TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/destination.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/"><img class="logo" src="/src/assets/shared/logo.svg" alt="Web logo"></a>
+        <button class="nav-toggle">
+            <img src="/src/assets/shared/icon-hamburger.svg" alt="Mobile menu">
+        </button>
+        <nav class="header-nav mobile-nav tablet-nav desktop-nav">
+            <ul class="nav-links ">
+                <hr class="nav-line">
+                <li><a class="nav-link nav-link--active" href="/"><span>00</span>home</a></li>
+                <li><a class="nav-link" href="/destination.html"><span>01</span>destination</a></li>
+                <li><a class="nav-link" href="#"><span>02</span>crew</a></li>
+                <li><a class="nav-link" href="#"><span>03</span>technology</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h2 class="main__title"><span class="main__title-prefix">01</span> pick your destination</h2>
+        <picture>
+            <source class="image" srcset="./src/assets/destination/image-moon.webp" type="image/webp">
+            <img class="image" loading="lazy" src="./src/assets/destination/image-moon.png" alt="Moon Image">
+        </picture>
+        <ul class="destination-list">
+            <li><a class="destination-list__item destination-list__item--active" href="#">Moon</a></li>
+            <li><a class="destination-list__item" href="#">mars</a></li>
+            <li><a class="destination-list__item" href="#">europa</a></li>
+            <li><a class="destination-list__item" href="#">titan</a></li>
+        </ul>
+        <section class="section-astro">
+            <div class="astro-info">
+                <h1 class="astro__name">Moon</h1>
+                <p class="astro__description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            </div>
+            <hr class="astro-line">
+            <div class="astro-distance">
+                <h3 class="astro-distance__title">AVG. DISTANCE</h3>
+                <p class="astro-distance__value">384,400 km</p>
+            </div>
+            <div class="astro-travel-time">
+                <h3 class="astro-travel-time__title">Est. travel time</h3>
+                <p class="astro-travel-time__value">3 days</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
