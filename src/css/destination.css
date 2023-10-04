@@ -158,12 +158,17 @@ body {
     border: none;
     background: #383B4B;
 }
-.astro-distance, .astro-travel-time {
+.travel-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.travel-distance, .travel-time {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
-.astro-distance__title, .astro-travel-time__title {
+.distance__title, .time__title {
     font-family: var(--subHeadingsFont);
     font-size: 1.4rem;
     font-weight: 400;
@@ -172,14 +177,13 @@ body {
     text-transform: uppercase;
     color: #D0D6F9;
 }
-.astro-distance__value, .astro-travel-time__value {
+.distance__value, .time__value {
     color: #FFF;
     font-family: var(--headingsFont);
     font-size: 2.8rem;
     line-height: normal;
     text-transform: uppercase;
 }
-
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
     body {
@@ -217,6 +221,41 @@ body {
     }
     .nav-link--active { border-bottom: 3px solid var(--white); }
     .nav-link span { display: none; }
+    .main {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .main__title {
+        margin-left: 3.9rem;
+        font-size: 2rem;
+        letter-spacing: 3.38px;
+    }
+    .image {
+        width: 30rem;
+        height: 30rem;
+        margin: 6rem 0 5.3rem;
+    }
+    .destination-list { gap: 3.5rem; }
+    .destination-list__item {
+        font-size: 1.6rem;
+        letter-spacing: 2.7px;
+    }
+    .section-astro { 
+        margin-top: 3.2rem; 
+        padding: 0 9.8rem;
+        align-items: center;
+    }
+    .astro__name { font-size: 8rem; }
+    .astro__description {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+    .travel-info { flex-direction: row; }
+    .travel-distance, .travel-time { 
+        width: 22rem; 
+        gap: 1.1rem;
+    }
 }
 @media (min-width: 1440px) {
     body { 
