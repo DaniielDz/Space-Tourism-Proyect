@@ -79,9 +79,7 @@ body {
     font-weight: bold;
 }
 /* Main */
-.main { 
-    margin: 4.8rem auto 0;
-}
+.main { margin: 4.8rem auto 0; }
 .home {
     width: 100%;
     height: 100%;
@@ -123,11 +121,11 @@ body {
 .home__button {
     width: 15rem;
     height: 15rem;
-    display: inline-block;
-    padding: 6rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--headingsFont);
     font-size: 2rem;
-    line-height: 3rem;
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: var(--darkBlue);
@@ -137,11 +135,15 @@ body {
 
 
 @media (min-width: 768px) {
-    body { 
-        padding: 0 0 0 3.9rem;
+    body {
+        padding: 0;
         background-image: url('/src/assets/home/background-home-tablet.jpg');
     }
-    .header { height: 9.6rem; }
+    .header { 
+        height: 9.6rem; 
+        padding-left: 3.9rem;
+    }
+    .logo { width: 4.8rem; height: 4.8rem; }
     .button { display: none; }
     .header-nav {
         width: 45rem;
@@ -167,4 +169,29 @@ body {
     }
     .nav-link--active { border-bottom: 3px solid var(--white); }
     .nav-link span { display: none; }
+    .main { margin-top: 10.6rem; }
+    .home-content {
+        width: 45rem;
+        height: 33.4rem;
+        padding: 0 .3rem;
+    }
+    .heading5 {
+        height: 2.4rem;
+        font-size: 2rem;
+        letter-spacing: 3.38px;
+    }
+    .heading { 
+        font-size: 15rem; 
+        line-height: 15rem;
+    }
+    .text {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+    .home__button{
+        width: 24.2rem;
+        height: 24.2rem;
+        font-size: 3.2rem;
+        letter-spacing: .2rem;
+    }
 }
