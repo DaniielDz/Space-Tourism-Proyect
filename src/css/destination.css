@@ -44,6 +44,8 @@ body {
     cursor: pointer;
     z-index: 10;
 }
+.nav-toggle__img{ display: none; }
+.nav-toggle__img--active{ display: block; }
 .nav-line {
     display: none;
     width: calc(70% - 10.3rem);
