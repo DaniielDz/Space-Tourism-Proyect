@@ -15,6 +15,7 @@ html {
     padding: 0;
     box-sizing: inherit;
     text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 } 
 h1, h5, p{ margin: 0; }
 body {
@@ -43,6 +44,8 @@ body {
     cursor: pointer;
     z-index: 10;
 }
+.nav-toggle__img{ display: none; }
+.nav-toggle__img--active{ display: block; }
 hr {
     display: none;
     width: calc(70% - 10.3rem);

@@ -22,7 +22,7 @@ h1, h5, p{ margin: 0; }
 body {
     height: 100vh;
     padding: 2.4rem 2.4rem ;
-    background: url('../assets/destination/background-destination-mobile.jpg');
+    background: url('../assets/crew/background-crew-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@ body {
 }
 .nav-toggle__img{ display: none; }
 .nav-toggle__img--active{ display: block; }
-.nav-line {
+hr {
     display: none;
     width: calc(70% - 10.3rem);
     height: 0.1rem;
@@ -93,106 +93,92 @@ body {
     font-weight: bold;
 }
 /* MAIN */
-.main { 
-    margin-top: 2.4rem; 
+.main{
+    margin-top: 2.4rem;
     text-align: center;
-    color: var(--white);
 }
 .main__title {
-    height: 1.9rem;
-    display: inline-flex;
-    gap: 1.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
     font-family: var(--subHeadingsFont);
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: normal;
     letter-spacing: 2.7px;
     text-transform: uppercase;
+    color: var(--white);
 }
-.main__title-prefix {
-    font-weight: 700;
-    opacity: 0.25;
+.main__title-prefix { 
+    font-weight: bold;
+    opacity: 0.25; 
+}
+.section-crew { margin-top: 3.2rem; }
+.image-container {
+    display: inline-block;
+    width: 100%;
+    height: 22.3rem;
+    border-bottom: 1px solid #383B4B;
 }
 .image { 
-    margin-top: 3.2rem;
-    width: 17rem;
-    height: 17rem;
-}
-.destination-list {
-    height: 2.8rem;   
+    width: 17.712rem;
+    height: 100%; 
+} 
+.crew-list {
+    height: 1rem;
+    margin-top: 3.3rem;
     display: flex;
     justify-content: center;
-    gap: 2.6rem;
+    gap: 1.6rem;
 }
-.destination-list__item {
+.crew-list__item {
     display: inline-block;
-    height: 100%;
-    font-family: var(--subHeadingsFont);
-    font-size: 1.4rem;
-    letter-spacing: 2.36px;
-    color: var(--gray);
-    text-transform: uppercase;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background: var(--white);
+    opacity: 0.1744;
 }
-.destination-list__item--active { 
-    color: var(--white);
-    border-bottom: .3rem solid var(--white);
-}
-.section-astro { 
-    margin-top: 2.6rem; 
+.crew-list__item--active { opacity: 1; }
+.crew {
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
 }
-.astro__name {
+.crew__info {
+    width: 32.7rem;
+    height: 17rem;
+    margin: 3.2rem auto 0;
+    display: flex;
+    flex-direction: column;
     font-family: var(--headingsFont);
-    font-size: 5.6rem;
-    font-weight: 400;
     line-height: normal;
+    color: var(--white);    
+}
+.crew__title {
+    margin-bottom: .8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.4951;
+}
+.crew__name {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+    font-weight: 400;
     text-transform: uppercase;
 }
-.astro__description {
+.crew__description {
+    color: #D0D6F9;
     font-family: var(--textsFont);
     font-size: 1.5rem;
-    line-height: 25px;
-    color: #D0D6F9;
-}
-.astro-line {
-    width: 100%;
-    height: 1px;
-    border: none;
-    background: #383B4B;
-}
-.travel-info {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-}
-.travel-distance, .travel-time {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-.distance__title, .time__title {
-    font-family: var(--subHeadingsFont);
-    font-size: 1.4rem;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2.362px;
-    text-transform: uppercase;
-    color: #D0D6F9;
+    line-height: 2.5rem;
 }
-.travel__value {
-    color: #FFF;
-    font-family: var(--headingsFont);
-    font-size: 2.8rem;
-    line-height: normal;
-    text-transform: uppercase;
-}
-/* MEDIA QUERIES */
 @media (min-width: 768px) {
     body {
         height: auto;
         padding: 0;
-        background-image: url('/src/assets/destination/background-destination-tablet.jpg');
+        background-image: url('/src/assets/crew/background-crew-tablet.jpg');
     }
     .header { 
         height: 9.6rem; 
@@ -224,49 +210,42 @@ body {
     }
     .nav-link--active { border-bottom: 3px solid var(--white); }
     .nav-link span { display: none; }
-    .main {
-        margin-top: 4rem;
-        display: flex;
-        flex-direction: column;
-    }
-    .main-header {
-        display: flex;
-        flex-direction: column;
-    }
+    /* MAIN */
+    .main { margin-top: 4rem; }
     .main__title {
-        margin-left: 3.9rem;
+        justify-content: flex-start;
+        margin-left: 3.85rem;
         font-size: 2rem;
         letter-spacing: 3.38px;
     }
+    .section-crew {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+    .image-container {
+        height: 57.2rem;
+        border-bottom: none;
+        overflow: hidden;
+    }
     .image {
-        width: 30rem;
-        height: 30rem;
-        margin-top: 6rem;
+        width: 45.637rem;
     }
-    .destination-list { gap: 3.5rem; }
-    .destination-list__item {
-        font-size: 1.6rem;
-        letter-spacing: 2.7px;
+    .crew { 
+        flex-direction: column-reverse; 
+        gap: 4rem;
     }
-    .section-astro { 
-        margin-top: 5.3rem; 
-        padding: 0 9.8rem;
-        align-items: center;
-    }
-    .astro__name { font-size: 8rem; }
-    .astro__description {
+    .crew__info { width: 45.8rem; }
+    .crew__title { font-size: 2.4rem; }
+    .crew__name { font-size: 4rem; }
+    .crew__description {
         font-size: 1.6rem;
         line-height: 2.8rem;
-    }
-    .travel-info { flex-direction: row; }
-    .travel-distance, .travel-time { 
-        width: 22rem; 
-        gap: 1.1rem;
     }
 }
 @media (min-width: 1440px) {
     body { 
-        background: url('/src/assets/destination/background-destination-desktop.jpg');
+        background: url('/src/assets/crew/background-crew-desktop.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -277,45 +256,56 @@ body {
     .desktop-nav {
         position: relative;
         width: 83rem;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.774227142333984px);
+        backdrop-filter: blur(8rem);
         background-color: inherit;
     }
     .nav-links { gap: 4.8rem; }
     .nav-link { font-size: 1.6rem; }
+    .nav-link:hover { border-bottom: 3px solid rgba(255, 255, 255, 0.5021) }
     .nav-link span { display: inline-block; }
-    .nav-line { display: block; }
-    .main { 
-        margin-top: 7.6rem;
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
-        gap: 16.7rem;
-    }
+    hr { display: block; }
+    /* MAIN */
+    .main { margin: 7.6rem 0 0 16.65rem; }
     .main__title {
-        height: 3.4rem;
-        margin-left: 2.8rem;
+        margin: 0;
         font-size: 2.8rem;
         letter-spacing: 4.72px;
-        line-height: normal;
     }
-    .image {
-        width: 44.5rem;
-        height: 44.5rem;
-        margin-top: 9.6rem;
+    .section-crew {
+        margin: 0;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10rem;
     }
-    .section-astro {
-        width: 44.5rem;
-        padding: 0;
-        align-items: flex-start;
-        text-align: left;
+    .image-container { 
+        width: fit-content;
+        height: 71.2rem; 
     }
-    .astro__name { font-size: 10rem; }
-    .astro__description {
+    .image { width: 56.8rem; } 
+    .crew { 
+        gap: 12rem;
+        text-align: left; 
+    }
+    .crew__info {
+        width: 48.8rem;
+        height: 100%;
+        margin: 0;
+    }
+    .crew__title { font-size: 3.2rem; }
+    .crew__name { font-size: 5.6rem; }
+    .crew__description {
+        width: 44.4rem;
+        height: 12.8rem;
         font-size: 1.8rem;
         line-height: 3.2rem;
     }
-    .travel-info { gap: 7.9rem; }
-    .travel-distance, .travel-time { width: fit-content; }
-    .nav-link:hover, .destination-list__item:hover { border-bottom: 3px solid rgba(255, 255, 255, 0.5021); }
+    .crew-list { 
+        margin: 0;
+        justify-content: left; 
+    }
+    .crew-list__item {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
