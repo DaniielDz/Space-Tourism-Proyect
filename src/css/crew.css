@@ -272,11 +272,10 @@ hr {
         letter-spacing: 4.72px;
     }
     .section-crew {
-        margin: 0;
+        margin: 0 13.7rem 0 0;
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: flex-end;
-        gap: 10rem;
+        justify-content: space-between;
     }
     .image-container { 
         width: fit-content;
