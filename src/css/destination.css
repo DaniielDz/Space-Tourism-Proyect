@@ -177,7 +177,7 @@ body {
     text-transform: uppercase;
     color: #D0D6F9;
 }
-.distance__value, .time__value {
+.travel__value {
     color: #FFF;
     font-family: var(--headingsFont);
     font-size: 2.8rem;
