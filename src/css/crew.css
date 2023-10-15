@@ -131,7 +131,7 @@ hr {
     justify-content: center;
     gap: 1.6rem;
 }
-.crew-list__item {
+.list__item {
     display: inline-block;
     width: 1rem;
     height: 1rem;
@@ -139,13 +139,13 @@ hr {
     background: var(--white);
     opacity: 0.1744;
 }
-.crew-list__item:hover { opacity: 0.5001; }
-.crew-list__item--active { opacity: 1; }
+.list__item:hover { opacity: 0.5001; }
+.list__item--active { opacity: 1; }
 .crew {
     display: flex;
     flex-direction: column;
 }
-.crew__info {
+.info {
     width: 32.7rem;
     height: 17rem;
     margin: 3.2rem auto 0;
@@ -155,21 +155,21 @@ hr {
     line-height: normal;
     color: var(--white);    
 }
-.crew__info--active { display: flex; }
-.crew__title {
+.info--active { display: flex; }
+.info__title {
     margin-bottom: .8rem;
     font-size: 1.6rem;
     font-weight: 400;
     text-transform: uppercase;
     opacity: 0.4951;
 }
-.crew__name {
+.info__name {
     margin-bottom: 1.6rem;
     font-size: 2.4rem;
     font-weight: 400;
     text-transform: uppercase;
 }
-.crew__description {
+.info__description {
     color: #D0D6F9;
     font-family: var(--textsFont);
     font-size: 1.5rem;
@@ -237,10 +237,10 @@ hr {
         flex-direction: column-reverse; 
         gap: 4rem;
     }
-    .crew__info { width: 45.8rem; }
-    .crew__title { font-size: 2.4rem; }
-    .crew__name { font-size: 4rem; }
-    .crew__description {
+    .info { width: 45.8rem; }
+    .info__title { font-size: 2.4rem; }
+    .info__name { font-size: 4rem; }
+    .info__description {
         font-size: 1.6rem;
         line-height: 2.8rem;
     }
@@ -288,14 +288,14 @@ hr {
         gap: 12rem;
         text-align: left; 
     }
-    .crew__info {
+    .info {
         width: 61.4rem;
         height: 100%;
         margin: 0;
     }
-    .crew__title { font-size: 3.2rem; }
-    .crew__name { font-size: 5.6rem; }
-    .crew__description {
+    .info__title { font-size: 3.2rem; }
+    .info__name { font-size: 5.6rem; }
+    .info__description {
         width: 44.4rem;
         height: 12.8rem;
         font-size: 1.8rem;
@@ -305,7 +305,7 @@ hr {
         margin: 0;
         justify-content: left; 
     }
-    .crew-list__item {
+    .list__item {
         width: 1.5rem;
         height: 1.5rem;
     }
