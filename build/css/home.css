@@ -1,0 +1,145 @@
+body {
+  background-image: url("../../src/assets/home/background-home-mobile.jpg");
+}
+
+/* Main */
+.main {
+  margin: 4.8rem auto 0;
+}
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+
+.home-content {
+  height: 27.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+}
+
+.heading5 {
+  height: 1.9rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+}
+
+.heading {
+  font-family: "Bellefair", serif;
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 10rem;
+  color: #FFF;
+}
+
+.text {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #D0D6F9;
+}
+
+.home__button {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #0b0d17;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: auto;
+    padding: 0;
+    background-image: url("/src/assets/home/background-home-tablet.jpg");
+  }
+  .main {
+    margin-top: 10.6rem;
+  }
+  .home-content {
+    width: 45rem;
+    height: 33.4rem;
+    padding: 0 0.3rem;
+  }
+  .heading5 {
+    height: 2.4rem;
+    font-size: 2rem;
+    letter-spacing: 3.38px;
+  }
+  .heading {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+  .text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  .home__button {
+    width: 24.2rem;
+    height: 24.2rem;
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background-image: url("/src/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main {
+    margin-top: 25rem;
+  }
+  .home {
+    margin-left: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 29.8rem;
+  }
+  .home-content {
+    text-align: left;
+  }
+  .heading5 {
+    height: 3.4rem;
+    font-size: 2.8rem;
+    letter-spacing: 4.72px;
+  }
+  .text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+  .home__button {
+    width: 27.4rem;
+    height: 27.4rem;
+  }
+  .home-explore {
+    width: 45rem;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .home-explore:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 1s ease;
+  }
+}

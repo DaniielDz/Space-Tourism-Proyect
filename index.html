@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="/src/css/normalize.css">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/home.css">
 </head>
 <body>
     <header class="header">
@@ -22,7 +22,7 @@
         </button>
         <nav class="header-nav mobile-nav tablet-nav desktop-nav">
             <ul class="nav-links ">
-                <hr>
+                <hr class="header-line">
                 <li><a class="nav-link nav-link--active" href="/"><span>00</span>home</a></li>
                 <li><a class="nav-link" href="/destination.html"><span>01</span>destination</a></li>
                 <li><a class="nav-link" href="/crew.html"><span>02</span>crew</a></li>
@@ -44,5 +44,22 @@
     </main>
 
     <script src="./src/js/main.js"></script>
+    <script>
+        let antes = [26,57,29,14];
+        let ahora = [52];
+
+        console.log(`Antes: ${suma(antes)} lineas de codigo JS`);
+        console.log(`Ahora: ${suma(ahora)} lineas de codigo JS`);
+        console.log(`Cantidad de lineas de código menos: ${suma(antes) - suma(ahora)}`);
+
+        function suma(array) {
+            let total = 0;
+            for(let i = 0; i < array.length; i++){
+                total += array[i];
+            }
+            return total;
+        }
+    </script>
+    
 </body>
 </html>

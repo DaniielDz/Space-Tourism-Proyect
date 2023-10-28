@@ -1,0 +1,133 @@
+.header {
+  padding: 2.4rem;
+}
+
+body {
+  padding: 0;
+  background-image: url("/src/assets/technology/background-technology-mobile.jpg");
+}
+
+.section {
+  gap: 5.6rem;
+}
+
+.image-container {
+  height: 17rem;
+}
+
+.image--landscape {
+  width: 100%;
+  display: block;
+}
+
+.image--portrait {
+  display: none;
+}
+
+.list__item {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  font-size: 1.6rem;
+  color: #FFF;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.list__item--active {
+  color: #000;
+  background-color: #FFF;
+}
+
+.info__title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/src/assets/technology/background-technology-tablet.jpg");
+  }
+  .header {
+    height: 9.6rem;
+    margin-bottom: 4rem;
+    padding-left: 3.9rem;
+  }
+  /* MAIN */
+  .image-container {
+    width: 100%;
+    height: 31rem;
+  }
+  .container--technology {
+    gap: 4.4rem;
+  }
+  .list__item {
+    width: 5.8rem;
+    height: 5.8rem;
+    font-size: 2.4rem;
+  }
+  .info__title {
+    font-size: 1.6rem;
+    letter-spacing: 2.7px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background-image: url("/src/assets/technology/background-technology-desktop.jpg");
+  }
+  .header {
+    margin: 4rem 0 7.6rem;
+    padding-left: 5.5rem;
+  }
+  .main {
+    margin-left: 16.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+  }
+  .section-technology {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13rem;
+  }
+  .image-container {
+    margin: 0;
+    width: 51.5rem;
+    height: 52.7rem;
+  }
+  .image--landscape {
+    display: none;
+  }
+  .image--portrait {
+    display: block;
+  }
+  .container--technology {
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .list {
+    flex-direction: column;
+  }
+  .list__item {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3.2rem;
+  }
+  .list__item:hover {
+    border: 1px solid #FFF;
+  }
+  .info__title {
+    font-size: 1.6rem;
+    letter-spacing: 2.7px;
+  }
+}

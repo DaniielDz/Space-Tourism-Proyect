@@ -19,7 +19,7 @@ const infoElements = document.querySelectorAll('.info');
 const image = document.querySelectorAll('.image');
 const source = document.querySelector('.source');
 const crew = ['douglas-hurley','mark-shuttleworth', 'victor-glover', 'anousheh-ansari'];    // Define un array de nombres de miembros de la tripulación
-const technology = ['launch-vehicle', 'space-capsule', 'spaceport'];    // Define un array de nombres de tecnologías
+const technology = ['launch-vehicle', 'spaceport','space-capsule', ];    // Define un array de nombres de tecnologías
 const astro = ['moon', 'mars', 'europa', 'titan'];  // Define un array de nombres de astros
 listItem.forEach( (item, index) => {    // Itera sobre cada elemento de la lista 'listItem' y agrega un evento de click
     item.addEventListener('click', () => {
@@ -27,7 +27,7 @@ listItem.forEach( (item, index) => {    // Itera sobre cada elemento de la lista
         change(infoElements, index);    // Llama a la función 'change' para cambiar las clases activas
         changeImage(index); // Llama a la función 'changeImage' para cambiar la imagen
     });
-});
+}); 
 function change(nodeList, index) {      // Función para cambiar las clases activas en un conjunto de elementos
     nodeList.forEach(element => {
         const firstClass = element.classList[0];    // Obtiene la primera clase del elemento     
