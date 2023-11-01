@@ -2,4 +2,3 @@ node_modules
 src/scss
 gulpfile.js
 package-lock.json
-package.json

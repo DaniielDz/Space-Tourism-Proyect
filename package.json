@@ -1,0 +1,30 @@
+{
+  "name": "space-tourism",
+  "version": "1.0.0",
+  "description": "Proyecto Space Tourism de FrontendMentor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:buil/css",
+    "tarea": "gulp tarea"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniielDz/Space-Tourism-Proyect.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Daniel Díaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniielDz/Space-Tourism-Proyect/issues"
+  },
+  "homepage": "https://github.com/DaniielDz/Space-Tourism-Proyect#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.4"
+  }
+}
